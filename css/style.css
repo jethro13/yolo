@@ -4,13 +4,14 @@
 }
 @font-face {
   font-family: 'aero';
-  src: url("../Aero.ttf");
+  src: url("../Square.ttf");
 }
 body{
   background-image: url("../bgcofee.jpg");
   background-size: cover;
   background-position: left;
   height: 100vh;
+  font-family: aero;
 }
 .flexnav{
   height: 50px;
@@ -23,12 +24,11 @@ body{
 }
 .topnav{
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .fixed{
   position: fixed;
   width: 100vw;
-  background-color: white;
 }
 .flexnav{
   width: 100%;
@@ -44,15 +44,18 @@ body{
   padding: 15px;
   font-weight: bold;
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #2162A6;
+  font-size: 1.2em;
 }
+
 .item a:hover{
-  background-color: black;
+  background-color: #59A27A;
   color: white;
 }
 .container{
   width: 100%;
-  background-color: ;
+  background-color: rgba(0,0,0, 0.5);
   box-sizing: border-box;
 }
 .home{
@@ -64,16 +67,19 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  padding-bottom: 89px;
 }
 .fiche{
   height: 400px;
   width: 30%;
   color: white;
-  margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(96,222,85, 0.4);
   font-family: aero;
-  border-radius: 5px;
 
+  margin-bottom: 60px;
+}
+.oth {
+  background-color: rgba(30,119,226, 0.4);
 }
 .titre {
   text-align: center;
@@ -82,6 +88,7 @@ body{
   margin: 0;
   font-size: 2em;
   margin-top: 5px;
+  font-family: roboto;
 }
 .ficheflex {
   display: flex;
@@ -119,39 +126,34 @@ body{
   border-radius: 10px;
   margin-top:25px;
 }
-.sys, .network{
+.sys, .network,.monq,.database{
   margin-top: 0;
 }
-h3 {
-  height: 25px;
-  text-align: center;
-  background-color: green;
-  padding-top: 3px;
-  border-radius: 10px;
+.niv{
+  width: 25%;
+  height: 100%;
+  float: left;
 }
-.js h3{
-  width: 75%;
-  background-color: yellowgreen;
+.niv:not(:last-child){
+  width: calc(25% - 5px);
+  border-right: 5px solid white;
 }
-.html h3{
-  width: 95%;
-  background-color: darkorange;
+.red{
+  background-color: #F00D1E;
+  border-radius: 10px 0px 0px 10px;
 }
-.network h3{
-  width: 80%;
-  background-color: red;
+.orange {
+  background-color: #D06900;
 }
-.sys h3{
-  width: 85%;
+.green {
   background-color: green;
 }
-.css h3{
-  width: 95%;
-  background-color: steelblue;
+.max{
+  background-color: #5ABE25;
+  border-radius: 0px 10px 10px 0px;
 }
-.jq h3{
-  width:50%;
-  background-color: midnightblue;
+.subtitle{
+  font-size: 1.2em;
 }
 p{
   text-align: center;
@@ -168,7 +170,6 @@ p{
   text-decoration: none;
   color: white;
   font-size: 2em;
-
 }
 .social{
   width:calc(100% - 100px);
@@ -190,4 +191,70 @@ p{
 .http h3{
   width:75%;
   background-color: darkmagenta;
+}
+.col{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio {
+  background-color: rgba(0,0,0, 0.5);
+}
+.containfolio{
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 115px;
+  box-sizing: border-box;
+}
+.project{
+  width: 350px;
+  height: 300px;
+}
+.pmarg{
+  margin-bottom: 70px;
+}
+.vign{
+  width: 100%;
+  height: 300px;
+}
+.xy {
+  background-image: url("../xy.png");
+  background-position: center;
+  background-size: cover;
+}
+.pf{
+  background-color: white;
+  text-align: center;
+  border-top: 2px solid black;
+  border-bottom: 2px black solid;
+  margin-bottom: 150px;
+  background-color: #59A27A;
+}
+.trombi {
+  background-image: url("../trombi.png");
+  background-position: center;
+  background-size: cover;
+}
+.framework {
+  background-image: url("../framework.png");
+  background-position: center;
+  background-size: cover;
+}
+.romanp {
+  background-image: url("../romanp.png");
+  background-position: center;
+  background-size: cover;
+}
+.prairie {
+  background-image: url("../prairie.png");
+  background-position: center;
+  background-size: cover;
+}
+.syndeo {
+  background-image: url("../ddzev.jpg");
+  background-position: center;
+  background-size: cover;
 }
