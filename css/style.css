@@ -50,7 +50,7 @@ body{
 }
 
 .item a:hover{
-  background-color: #59A27A;
+  background-color: rgba(255,238,238, 0.4);
   color: white;
 }
 .container{
@@ -60,7 +60,6 @@ body{
 }
 .home{
   width: 1400px;
-  height: 100%;
   margin: auto;
   margin-top: 20px;
   display: flex;
@@ -71,9 +70,9 @@ body{
 }
 .fiche{
   height: 400px;
-  width: 30%;
+  width: 400px;
   color: white;
-  background-color: rgba(96,222,85, 0.4);
+  background-color: rgba(255,238,238, 0.4);
   font-family: aero;
 
   margin-bottom: 60px;
@@ -206,7 +205,7 @@ p{
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
-  padding-bottom: 115px;
+  padding-bottom: 102px;
   box-sizing: border-box;
 }
 .project{
@@ -229,9 +228,11 @@ p{
   background-color: white;
   text-align: center;
   border-top: 2px solid black;
-  border-bottom: 2px black solid;
+  border-bottom: 4px black solid;
   margin-bottom: 150px;
-  background-color: #59A27A;
+  background-color: rgba(255,238,238, 0.4);
+  color: white;
+  font-size: 1.8em;
 }
 .trombi {
   background-image: url("../trombi.png");
@@ -257,4 +258,234 @@ p{
   background-image: url("../ddzev.jpg");
   background-position: center;
   background-size: cover;
+}
+.nope{
+  display: none;
+}
+input[type=checkbox] ~ ul{
+    display: none;
+}
+@media (max-width: 1499px) {
+        .home,.containfolio{
+          width: 1200px;
+        }
+}
+@media (max-width: 1299px) {
+        .home,.containfolio{
+          width: 1000px;
+        }
+}
+@media (max-width: 1099px) {
+        .home,.containfolio{
+          width: 800px;
+        }
+}
+@media (max-width: 899px) {
+        .fiche,.home,.containfolio{
+          width: 100%;
+        }
+        .none {
+          display: none;
+        }
+        .nope{
+          display: block;
+        }
+        input[type=checkbox]{
+          display: block;
+          background-color: red;
+        }
+        input[type=checkbox]:checked ~ ul {
+    display: block
+}
+.dropdown{
+    position: fixed;
+    display: block;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+}
+
+
+/**
+    Hide the checkbox itself. For selecting
+    it we will use the label instead.
+*/
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+/* Click to expand button */
+
+label{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    background-color: #2162A6;
+    padding: 15px 20px;
+
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*  The ul will have display:none by default */
+
+.prout{
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+    display: none;
+}
+
+
+.prout li{
+    padding: 15px;
+    background-color: #2162A6;
+    color: #4FB9A7;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.prout li:hover{
+    background-color: #4FB9A7;
+    color: #FFF;
+}
+
+.prout li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+input[type=checkbox]:checked ~ label {
+    background-color: #3D88BD;
+}
+
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+
+
+
+
+
+}
+@media (max-width: 800px) {
+        .fiche,.project{
+          width: 100%;
+        }
+        .home,.containfolio{
+          width: 100%;
+        }
+        .none {
+          display: none;
+        }
+        .nope{
+          display: block;
+        }
+        input[type=checkbox]{
+          display: block;
+          background-color: red;
+        }
+        input[type=checkbox]:checked ~ ul {
+    display: block
+}
+.dropdown{
+    position: fixed;
+    display: block;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+}
+
+
+/**
+    Hide the checkbox itself. For selecting
+    it we will use the label instead.
+*/
+
+input[type=checkbox]{
+    display: none;
+}
+
+
+/* Click to expand button */
+
+label{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    background-color: #2162A6;
+    padding: 15px 20px;
+
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/*  The ul will have display:none by default */
+
+.prout{
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+
+    display: none;
+}
+
+
+.prout li{
+    padding: 15px;
+    background-color: #2162A6;
+    color: #4FB9A7;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.prout li:hover{
+    background-color: #4FB9A7;
+    color: #FFF;
+}
+
+.prout li a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+input[type=checkbox]:checked ~ label {
+    background-color: #3D88BD;
+}
+
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+}
 }
