@@ -6,6 +6,10 @@
   font-family: 'aero';
   src: url("../Square.ttf");
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 body{
   background-image: url("../bgcofee.jpg");
   background-size: cover;
@@ -208,6 +212,30 @@ p{
   padding-bottom: 102px;
   box-sizing: border-box;
 }
+.containcurri{
+    background-color: #011;
+    height: 400px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cvs{
+  background-color: #2162A6;
+  width: 300px;
+  height: 150px;
+  font-size: 2.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cvs:hover{
+  background-color: #fee;
+  color: #2162A6;
+  cursor: pointer;
+}
 .project{
   width: 350px;
   height: 300px;
@@ -231,8 +259,14 @@ p{
   border-bottom: 4px black solid;
   margin-bottom: 150px;
   background-color: rgba(255,238,238, 0.4);
-  color: white;
+  color: #2162A6;
   font-size: 1.8em;
+}
+.tcv{
+  margin-bottom: 0;
+}
+.transpar, .transpar:hover{
+  background-color: transparent;
 }
 .trombi {
   background-image: url("../trombi.png");
@@ -488,4 +522,10 @@ input[type=checkbox]:checked ~ label {
 input[type=checkbox]:checked ~ ul {
     display: block;
 }
+}
+@media (max-width: 400px) {
+        .ico{
+          width: 60px;
+          height: 60px;
+        }
 }
